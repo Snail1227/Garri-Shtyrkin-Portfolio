@@ -1,68 +1,59 @@
-import React from 'react';
-import { Element } from 'react-scroll';
-
+import React, { useState } from "react";
+import { Element } from "react-scroll";
 
 const Contact: React.FC = () => {
+  const [name, setName] = useState("");
+  const [email, setEmail] = useState("");
+  const [message, setMessage] = useState("");
 
-
-const handleSubmit = async (event: React.FormEvent<HTMLFormElement>) => {
+  const handleSubmit = async (event: React.FormEvent<HTMLFormElement>) => {
     event.preventDefault();
+  };
 
-    const form = new FormData(event.currentTarget);
-    const data = {
-        name: form.get('name'),
-        email: form.get('email'),
-        message: form.get('message'),
-    };
+  return (
+    <Element name="contactSection" className="element">
+      <div className="contact" id="contact">
+        <form
+          onSubmit={handleSubmit}
+          className="contact-form"
+          name="contactForm"
+        >
+          <div className="sub-title">
+            <p className="title">Tell me about your project</p>
+            <hr />
+          </div>
 
-    try {
-        const response = await fetch('/.netlify/functions/sendEmail', {
-            method: 'POST',
-            body: JSON.stringify(data),
-            headers: {
-                'Content-Type': 'application/json',
-            },
-        });
+          <div className="contact-info">
+            <input
+              value={name}
+              name="name"
+              placeholder="Full Name"
+              type="text"
+              onChange={(e) => setName(e.target.value)}
+            />
+            <input
+              value={email}
+              name="email"
+              placeholder="Email Address"
+              type="text"
+              onChange={(e) => setEmail(e.target.value)}
+            />
+          </div>
 
-        if (response.ok) {
-            console.log('Email sent successfully');
-        } else {
-            console.error('Failed to send email');
-        }
-    } catch (error) {
-        console.error('Error sending email:', error);
-    }
+          <textarea
+            value={message}
+            name="message"
+            placeholder="Message description"
+            onChange={(e) => setMessage(e.target.value)}
+          ></textarea>
+
+          <div>
+            <button type="submit">Send</button>
+          </div>
+        </form>
+      </div>
+    </Element>
+  );
 };
-
-
-
-    
-    return (
-
-        <Element name="contactSection" className="element">
-            <div className='contact' id="contact">
-            <form onSubmit={handleSubmit} className='contact-form' name="contactForm">
-                <div className='sub-title'>
-                    <p className='title'>Tell me about your project</p>
-                    <hr />
-                </div>
-
-                <div className='contact-info'>
-                    <input name="name" placeholder='Full Name' type="text" />
-                    <input name="email" placeholder='Email Address' type="text" />
-                </div>
-
-                <textarea name="message" placeholder='Message description' ></textarea>
-
-                <div>
-                    <button type="submit">Send</button> 
-                </div>
-            </form>
-        </div>
-        
-      </Element>
-        
-    )
-}
 
 export default Contact;
