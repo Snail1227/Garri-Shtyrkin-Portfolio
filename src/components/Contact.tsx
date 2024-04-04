@@ -21,9 +21,14 @@ const Contact: React.FC = () => {
 
     if (name && email && message) {
         try {
+            const formDataParams = new URLSearchParams();
+            formData.forEach((value, key) => {
+                formDataParams.append(key, value.toString());
+            });
+  
             const response = await fetch('/', {
               method: 'POST',
-              body: formData,
+              body: formDataParams,
               headers: { "Content-Type": "application/x-www-form-urlencoded" },
             });
       
