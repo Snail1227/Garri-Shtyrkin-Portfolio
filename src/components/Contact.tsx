@@ -98,6 +98,7 @@ const Contact: React.FC = () => {
           method="POST"
           action="/success-page"
         >
+          <input type="hidden" name="form-name" value="contactForm" />
           <div className="sub-title">
             <p className="title">Tell me about your project</p>
             <hr />
