@@ -57,7 +57,6 @@ const Contact: React.FC = () => {
           name="contactForm"
           data-netlify="true"
           method="POST"
-          action="/success-page"
         >
           <input type="hidden" name="form-name" value="contactForm" />
           <div className="sub-title">
