@@ -1,6 +1,6 @@
-import React, { useState } from "react";
+// import React, { useState } from "react";
 import { Element } from "react-scroll";
-import { ToastContainer, toast } from 'react-toastify';
+// import { ToastContainer, toast } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
 
 const Contact: React.FC = () => {
@@ -132,7 +132,7 @@ const Contact: React.FC = () => {
             <button type="submit">Send</button>
           </div>
         </form>
-        <ToastContainer />
+        {/* <ToastContainer /> */}
       </div>
     </Element>
   );
