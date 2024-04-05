@@ -41,7 +41,7 @@ const About: React.FC = () => {
                 <div className='about-me'>
                     <p>About Me</p>
                     <hr />
-                    <p>My passion for building websites started since 2013 and since then i have helped companies around the world build amazing websites and products that create real value for the business and users.</p>
+                    <p>My passion for building websites started since 2023 and since then i have helped companies around the world build amazing websites and products that create real value for the business and users.</p>
                     <p>I enjoy solving problems with clean scalable solutions and I also have a genuine passion for inspiring design.</p>
                     <p>I am a fullstack developer focusing on core frontend and backend technologies which include HTML, CSS, Javascript, React and other core languages.</p>
 
