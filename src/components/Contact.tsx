@@ -49,49 +49,49 @@ const Contact: React.FC = () => {
   // };
 
 
-  const [name, setName] = useState<string>("");
-  const [email, setEmail] = useState<string>("");
-  const [message, setMessage] = useState<string>("");
+  // const [name, setName] = useState<string>("");
+  // const [email, setEmail] = useState<string>("");
+  // const [message, setMessage] = useState<string>("");
 
-  const encode = (data: { [key: string]: string }): string => {
-    return Object.keys(data)
-      .map(key => encodeURIComponent(key) + "=" + encodeURIComponent(data[key]))
-      .join("&");
-  }
+  // const encode = (data: { [key: string]: string }): string => {
+  //   return Object.keys(data)
+  //     .map(key => encodeURIComponent(key) + "=" + encodeURIComponent(data[key]))
+  //     .join("&");
+  // }
 
-  const handleSubmit = (e: React.FormEvent<HTMLFormElement>): void => {
-    e.preventDefault();
-    fetch("/", {
-      method: "POST",
-      headers: { "Content-Type": "application/x-www-form-urlencoded" },
-      body: encode({ "form-name": "contact", name, email, message })
-    })
-      .then(() => alert("Success!"))
-      .catch(e => toast(e));
-  };
+  // const handleSubmit = (e: React.FormEvent<HTMLFormElement>): void => {
+  //   e.preventDefault();
+  //   fetch("/", {
+  //     method: "POST",
+  //     headers: { "Content-Type": "application/x-www-form-urlencoded" },
+  //     body: encode({ "form-name": "contact", name, email, message })
+  //   })
+  //     .then(() => alert("Success!"))
+  //     .catch(e => toast(e));
+  // };
 
-  const handleChange = (e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement>): void => {
-    const { name, value } = e.target;
-    switch (name) {
-      case 'name':
-        setName(value);
-        break;
-      case 'email':
-        setEmail(value);
-        break;
-      case 'message':
-        setMessage(value);
-        break;
-      default:
-        break;
-    }
-  };
+  // const handleChange = (e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement>): void => {
+  //   const { name, value } = e.target;
+  //   switch (name) {
+  //     case 'name':
+  //       setName(value);
+  //       break;
+  //     case 'email':
+  //       setEmail(value);
+  //       break;
+  //     case 'message':
+  //       setMessage(value);
+  //       break;
+  //     default:
+  //       break;
+  //   }
+  // };
 
   return (
     <Element name="contactSection" className="element">
       <div className="contact" id="contact">
         <form
-          onSubmit={handleSubmit}
+          // onSubmit={handleSubmit}
           className="contact-form"
           name="contactForm"
           data-netlify="true"
@@ -106,26 +106,26 @@ const Contact: React.FC = () => {
 
           <div className="contact-info">
             <input
-              value={name}
+              // value={name}
               name="name"
               placeholder="Full Name"
               type="text"
-              onChange={handleChange}
+              // onChange={handleChange}
             />
             <input
-              value={email}
+              // value={email}
               name="email"
               placeholder="Email Address"
               type="email"
-              onChange={handleChange}
+              // onChange={handleChange}
             />
           </div>
 
           <textarea
-            value={message}
+            // value={message}
             name="message"
             placeholder="Message description"
-            onChange={handleChange}
+            // onChange={handleChange}
           ></textarea>
 
           <div>
