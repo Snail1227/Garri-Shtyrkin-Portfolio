@@ -433,24 +433,6 @@ hr {
   text-align: center;
 }
 
-
-@media (max-width: 500px) {
-  .circle-images-about {
-    width: 70px;
-    height: 70px;
-  }
-
-  .react-back { transform: rotate(0deg) translateX(130px) rotate(0deg); }
-  .css-back { transform: rotate(72deg) translateX(130px) rotate(-72deg); }
-  .js-back { transform: rotate(144deg) translateX(130px) rotate(-144deg); }
-  .html-back { transform: rotate(216deg) translateX(130px) rotate(-216deg); }
-  .ts-back { transform: rotate(288deg) translateX(130px) rotate(-288deg); }
-
-  .about-tagline {
-    font-size: 13px;
-  }
-}
-
 @media (max-width: 900px) {
 
   .react-back { transform: rotate(0deg) translateX(170px) rotate(0deg); }
@@ -460,6 +442,26 @@ hr {
   .ts-back { transform: rotate(288deg) translateX(170px) rotate(-288deg); }
 
 }
+
+
+@media (max-width: 500px) {
+  .circle-images-about {
+    width: 70px;
+    height: 70px;
+  }
+
+  .react-back { transform: rotate(0deg) translateX(120px) rotate(0deg); }
+  .css-back { transform: rotate(72deg) translateX(120px) rotate(-72deg); }
+  .js-back { transform: rotate(144deg) translateX(120px) rotate(-144deg); }
+  .html-back { transform: rotate(216deg) translateX(120px) rotate(-216deg); }
+  .ts-back { transform: rotate(288deg) translateX(120px) rotate(-288deg); }
+
+  .about-tagline {
+    font-size: 13px;
+  }
+}
+
+
 
 /* Work  */
 
