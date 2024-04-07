@@ -47,7 +47,7 @@ const Home: React.FC = () => {
                         <p className='lower-font-size'>Need a Web site, let me know</p>
                     </div>
                     
-                    <Link to="contactSection" smooth={true} duration={100}>
+                    <Link to="contactSection" smooth={true} duration={300}>
                         <button>Contact me</button>
                     </Link>
                     

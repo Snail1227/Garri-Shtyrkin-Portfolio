@@ -14,7 +14,11 @@ const About: React.FC = () => {
                     
                     <div className='about-circle'>
                         <div className='orbit'>
-                            <img className='react' src={react} alt="react" />
+                            {/* <img className='circle-images-about react' src={react} alt="react" /> */}
+
+                            <div className='circle-images-about react-back'>
+                                <img className='react' src={react} alt="react" />
+                            </div>
 
                             <div className='circle-images-about css-back'>
                                 <img className='css' src={css} alt="css" />
