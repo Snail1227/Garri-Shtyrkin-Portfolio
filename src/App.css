@@ -2,6 +2,11 @@ html {
   scroll-behavior: smooth;
 }
 
+html, body {
+  max-width: 100%;
+  overflow-x: hidden;
+}
+
 body {
   scroll-behavior: smooth;
   display: block;
@@ -445,6 +450,10 @@ hr {
 
 
 @media (max-width: 500px) {
+
+  .about-images {
+    width: 200px;
+  }
   .circle-images-about {
     width: 70px;
     height: 70px;
