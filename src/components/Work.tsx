@@ -1,4 +1,5 @@
 import React from 'react';
+import bookingSystem from '../images/booking-system-screen.png'
 
 
 const Work: React.FC = () => {
@@ -11,8 +12,11 @@ const Work: React.FC = () => {
                 </div>
                 <div className='work-projects'>
                     <div className='project'>
-                        <p>Ecommerce Landing page</p>
-                        <div className='work-image'></div>
+                        <p>Booking system page</p>
+                        <div className='work-image'>
+                            <img src={bookingSystem} alt="bookingSystem" />
+                            <button>GitHub</button>
+                        </div>
                     </div>
                     <div className='project'>
                         <p>Ecommerce Landing page</p>

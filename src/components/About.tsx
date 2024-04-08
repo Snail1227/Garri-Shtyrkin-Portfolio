@@ -45,10 +45,9 @@ const About: React.FC = () => {
                 <div className='about-me'>
                     <p>About Me</p>
                     <hr />
-                    <p>My passion for building websites started since 2023 and since then i have helped companies around the world build amazing websites and products that create real value for the business and users.</p>
-                    <p>I enjoy solving problems with clean scalable solutions and I also have a genuine passion for inspiring design.</p>
-                    <p>I am a fullstack developer focusing on core frontend and backend technologies which include HTML, CSS, Javascript, React and other core languages.</p>
-
+                    <p>I web developer with a year of experience passionate about crafting engaging websites. Skilled in HTML, CSS, React.js, Express.js and TypeScript, I thrive in frontend development but also have a solid grasp of backend basics. My journey in web development is driven by a desire to create seamless, responsive user experiences.</p>
+                    <p>I've had the opportunity to work on diverse projects, honing my skills in both collaborative and individual settings. These experiences have sharpened my problem-solving abilities and taught me the value of effective communication within a team.</p>
+                    <p>Eager to continue learning and facing new challenges, I look forward to contributing to exciting projects that push the boundaries of web technology.</p>
                 </div>
             </div>
         </>
