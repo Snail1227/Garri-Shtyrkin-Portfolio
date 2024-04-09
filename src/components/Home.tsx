@@ -32,7 +32,7 @@ const Home: React.FC = () => {
 
     return (
         <>
-            <div className='home'>
+            <div id='home' className='home'>
                 <div className='home-text'>
                     <div>
                         <h1 className='name-is'>Hi, My name is </h1>

@@ -9,7 +9,7 @@ import ts from "../images/ts-removebg.png"
 const About: React.FC = () => {
     return (
         <>
-            <div className='about'>
+            <div id='about' className='about'>
                 <div className='about-images'>
                     
                     <div className='about-circle'>
@@ -45,7 +45,7 @@ const About: React.FC = () => {
                 <div className='about-me'>
                     <p>About Me</p>
                     <hr />
-                    <p>I web developer with a year of experience passionate about crafting engaging websites. Skilled in HTML, CSS, React.js, Express.js and TypeScript, I thrive in frontend development but also have a solid grasp of backend basics. My journey in web development is driven by a desire to create seamless, responsive user experiences.</p>
+                    <p>I'm web developer with a year of experience, passionate about crafting engaging websites. Skilled in HTML, CSS, React.js, Express.js and TypeScript, I thrive in frontend development, but also have a solid grasp of backend basics. My journey in web development is driven by a desire to create seamless, responsive user experiences.</p>
                     <p>I've had the opportunity to work on diverse projects, honing my skills in both collaborative and individual settings. These experiences have sharpened my problem-solving abilities and taught me the value of effective communication within a team.</p>
                     <p>Eager to continue learning and facing new challenges, I look forward to contributing to exciting projects that push the boundaries of web technology.</p>
                 </div>
