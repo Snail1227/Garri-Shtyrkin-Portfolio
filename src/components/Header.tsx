@@ -8,13 +8,12 @@ const Header: React.FC = () => {
     useEffect(() => {
         const handleScroll = () => {
         const offset = window.pageYOffset;
-        console.log(offset)
         setIsScrolled(offset > 0);
-        if (offset > 499 && offset < 1200) {
+        if (offset > 499 && offset < 1300) {
             setCurrentSection('about');
           }else if (offset === 0) {
             setCurrentSection('home');
-          } else if (offset > 1350) {
+          } else if (offset > 1300) {
             setCurrentSection('work');
           } 
         };
@@ -26,7 +25,6 @@ const Header: React.FC = () => {
         return () => window.removeEventListener('scroll', handleScroll);
     }, []);
 
-    console.log(currentSection)
     return (
         <>
             <header className={isScrolled ? 'scrolled' : ''}>

@@ -63,7 +63,8 @@ const Contact: React.FC = () => {
           <input 
             type='hidden'
             name='form-name'
-            value='contactForm' />
+            value='contactForm' 
+            required/>
 
           <div className="sub-title">
             <p className="title">Tell me about your project</p>
@@ -76,6 +77,7 @@ const Contact: React.FC = () => {
               name="name"
               placeholder="Full Name"
               type="text"
+              required
               // onChange={(e) => setName(e.target.value)}
             />
             <input
@@ -83,6 +85,7 @@ const Contact: React.FC = () => {
               name="email"
               placeholder="Email Address"
               type="email"
+              required
               // onChange={(e) => setEmail(e.target.value)}
             />
           </div>
