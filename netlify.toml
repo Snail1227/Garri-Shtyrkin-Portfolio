@@ -1,0 +1,9 @@
+[build]
+  publish = "build"
+  command = "npm run start"
+
+[[plugins]]
+  package = "@sentry/netlify-build-plugin"
+
+[context.production.environment]
+  SENTRY_AUTH_TOKEN = "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"
