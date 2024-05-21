@@ -13,7 +13,7 @@ const Header: React.FC = () => {
             setCurrentSection('about');
           }else if (offset === 0) {
             setCurrentSection('home');
-          } else if (offset > 1300) {
+          } else if (offset > 1200) {
             setCurrentSection('work');
           } 
         };

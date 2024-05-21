@@ -317,6 +317,8 @@ header hr {
   gap: 100px;
   padding: 100px 0;
   background-color: var(--background-color-3);
+  position: relative;
+  z-index: 10;
 }
 
 
@@ -790,5 +792,19 @@ footer > p {
   .footer-links {
     gap: 30px;
     flex-direction: column;
+  }
+}
+
+@media (max-width: 500px) {
+  .contact-info {
+    flex-direction: column;
+  }
+
+  .contact-info input {
+    width: auto;
+  }
+
+  .contact button {
+    width: 100%;
   }
 }
