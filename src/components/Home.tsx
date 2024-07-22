@@ -41,7 +41,7 @@ const Home: React.FC = () => {
                             <h1>I'm</h1>
                             <div className='web-animation'>
                                 {/* <h1 className={`text-cursor ${blink ? "" : "blink"}`}>|</h1> */}
-                                <h1 className={`web-developer-animation `}>Web Developer</h1>
+                                <h1 className={`web-developer-animation `}>Full Stack Developer</h1>
                             </div>
                         </div>
                         <p className='lower-font-size'>Need a Web site, let me know</p>

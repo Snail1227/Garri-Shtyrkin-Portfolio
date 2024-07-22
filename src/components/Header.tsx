@@ -7,23 +7,43 @@ const Header: React.FC = () => {
 
     useEffect(() => {
         const handleScroll = () => {
-        const offset = window.pageYOffset;
-        setIsScrolled(offset > 0);
-        if (offset > 499 && offset < 1300) {
-            setCurrentSection('about');
-          }else if (offset === 0) {
-            setCurrentSection('home');
-          } else if (offset > 1200) {
-            setCurrentSection('work');
-          } 
+            const offsetX = window.innerWidth;
+            const offset = window.pageYOffset;
+            console.log(offset)
+            setIsScrolled(offset > 0);
+    
+            if (offsetX >= 1200) {
+                if (offset < 1200 && offset > 500) {
+                    setCurrentSection('about');
+                } else if (offset < 500 && offset !== 0) {
+                    setCurrentSection('home');
+                } else if (offset > 1200) {
+                    setCurrentSection('work');
+                } 
+            } else if (offsetX < 1200 && offsetX > 750) {
+                if (offset < 2150 && offset > 1050) {
+                    setCurrentSection('about');
+                } else if (offset < 1050 && offset !== 0) {
+                    setCurrentSection('home');
+                } else if (offset > 2150) {
+                    setCurrentSection('work');
+                } 
+            } else if (offsetX <= 750) {
+                if (offset < 2150 && offset > 1050) {
+                    setCurrentSection('about');
+                } else if (offset < 1050 && offset !== 0) {
+                    setCurrentSection('home');
+                } else if (offset > 2150) {
+                    setCurrentSection('work');
+                } 
+            }
         };
-
-        
-
+    
         window.addEventListener('scroll', handleScroll);
-
+    
         return () => window.removeEventListener('scroll', handleScroll);
     }, []);
+    
 
     return (
         <>
