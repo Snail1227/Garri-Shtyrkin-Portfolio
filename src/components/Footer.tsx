@@ -1,6 +1,6 @@
 import React from 'react';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faInstagram, faGithub, faLinkedin } from '@fortawesome/free-brands-svg-icons';
+import { faGithub, faLinkedin } from '@fortawesome/free-brands-svg-icons';
 
 
 const Footer: React.FC = () => {
@@ -11,7 +11,7 @@ const Footer: React.FC = () => {
                 <div className='footer-contact'>
 
                     <div className='footer-phone-email'>
-                        <p>Phone: <a href="tell:+19175300224"></a>+1 917 530 0224</p>
+                        <p>Phone: <a href="tel:+19175300224">+1 917 530 0224</a></p>
                         <p>Email: <a href="mailto:garriwebdeveloper@gmail.com">garriwebdeveloper@gmail.com</a></p>
                     </div>
                     
