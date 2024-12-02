@@ -28,7 +28,7 @@ const Work: React.FC = () => {
                         <p>Italian Restaurant</p>
                         <div className='work-image'>
                             <img src={restaurant} alt="restaurant" />
-                            <a href="https://github.com/Snail1227/hotel-booking">
+                            <a href="https://github.com/Snail1227/restaurant-project">
                                 <button>GitHub</button>
                             </a>
                         </div>
