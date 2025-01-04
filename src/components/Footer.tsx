@@ -4,6 +4,7 @@ import { faGithub, faLinkedin } from '@fortawesome/free-brands-svg-icons';
 
 
 const Footer: React.FC = () => {
+    const currentYear = new Date().getFullYear();
     return (
         <footer >
             <div className='footer-elements'>
@@ -35,7 +36,7 @@ const Footer: React.FC = () => {
 
                 </div>
 
-                <p className='lower-font-size'>&copy; Copyright 2024. All right reserved</p>
+                <p className='lower-font-size'>&copy; Copyright {currentYear}. All right reserved</p>
             </div>
         </footer>
     )
