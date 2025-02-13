@@ -4,6 +4,7 @@ import restaurant from '../images/restaurant-demo.png'
 import saasWebSite from '../images/saas-website.png'
 import portfolio from '../images/portfolio.png'
 import website from '../images/website-overview.png'
+import flowers_portfolio from '../images/natalysflowers.com.png'
 
 
 const Work: React.FC = () => {
@@ -15,6 +16,15 @@ const Work: React.FC = () => {
                     <hr />
                 </div>
                 <div className='work-projects'>
+                    <div className='project'>
+                        <p>Website Portfolio</p>
+                        <div className='work-image'>
+                            <img src={flowers_portfolio} alt="flowers_portfolio" />
+                            <a href="https://natalysflowers.com/">
+                                <button>Live</button>
+                            </a>
+                        </div>
+                    </div>
                     <div className='project'>
                         <p>Hotel booking system</p>
                         <div className='work-image'>
